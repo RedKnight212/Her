@@ -10,10 +10,7 @@
 </head>
 <body class="container">
 
-     <audio id="bgAudio" autoplay loop>
-      <source src="background.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+     
     <div class="night"></div>
     <div class="flowers">
       <div class="flower flower--1">
@@ -312,13 +309,7 @@
       </div>
     </div>
     <script src="main.js">
-      let audio = document.getElementById("bgAudio");
-    
-    // Resume audio from saved time
-    let savedTime = localStorage.getItem("audioTime");
-    if (savedTime) {
-      audio.currentTime = parseFloat(savedTime);
-    }
+      
     </script>
 
  
